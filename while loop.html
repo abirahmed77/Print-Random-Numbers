@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      body {
+        background-image: linear-gradient(cornflowerblue, cyan, violet);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      h2 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(97, 2, 199);
+      }
+
+      #result {
+        font-family: cursive;
+        color: rgb(153, 74, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>JavaScript Datatypes, Let keyword and Loops</h2>
+    <hr />
+    <p id="result"></p>
+
+    <script>
+      var i = 0;
+      var text = " ";
+
+      while (i < 15) {
+        text = text + "The values inside the block: " + i + "</br>";
+        i = i + 1;
+      }
+
+      document.getElementById("result").innerHTML = text;
+
+      document.write("The value of i outside the block is: " + i);
+    </script>
+  </body>
+</html>
